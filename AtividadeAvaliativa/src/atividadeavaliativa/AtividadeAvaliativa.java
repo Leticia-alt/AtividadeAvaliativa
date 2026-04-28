@@ -15,41 +15,41 @@ public static void main(String[] args) {
             System.out.print("Escolha: ");
             opcao = sc.nextInt();
 
-            // RESERVAR
+            //RESERVAR
             if (opcao == 1) {
 
-                System.out.print("Fileira (1 a 6): ");
+                System.out.print("Fileira: ");
                 int fileira = sc.nextInt();
 
-                System.out.print("Assento (1 a 8): ");
+                System.out.print("Assento: ");
                 int assento = sc.nextInt();
 
                 if (sala[fileira - 1][assento - 1] == 0) {
                     sala[fileira - 1][assento - 1] = 1;
-                    System.out.println("Assento reservado com sucesso!");
+                    System.out.println("Assento reservado");
                 } else {
-                    System.out.println("Assento ja esta ocupado!Por favor selecione outro !");
+                    System.out.println("Assento esta ocupado");
                 }
             }
 
-            // CANCELAR
+            //CANCELAR
             else if (opcao == 2) {
 
-                System.out.print("Fileira (1 a 6): ");
+                System.out.print("Fileira: ");
                 int fileira = sc.nextInt();
 
-                System.out.print("Assento (1 a 8): ");
+                System.out.print("Assento: ");
                 int assento = sc.nextInt();
 
                 if (sala[fileira - 1][assento - 1] == 1) {
                     sala[fileira - 1][assento - 1] = 0;
-                    System.out.println("Reserva cancelada!");
+                    System.out.println("reserva cancelada");
                 } else {
-                    System.out.println("Assento ja esta livre!");
+                    System.out.println("Assento já estava livre");
                 }
             }
 
-            // MAPA DA SALA
+            //MAPA SALA
             else if (opcao == 3) {
 
                 System.out.println("\nMapa da sala:");
@@ -67,7 +67,7 @@ public static void main(String[] args) {
 
         } while (opcao != 4);
 
-        System.out.println("Sistema encerrado.");
+        System.out.println("Programa encerrado.");
     }
 }/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
